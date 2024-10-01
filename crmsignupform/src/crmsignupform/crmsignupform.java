@@ -55,6 +55,24 @@ public class crmsignupform {
         btnSubmit.setBackground(new Color(100, 149, 237));
         btnSubmit.setForeground(Color.WHITE);
 
+        openHtmlButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    // Open the HTML form in the default browser
+                    File htmlFile = new File("./html/signup.html"); // Relative path to the HTML file
+                    if (htmlFile.exists()) {
+                        Desktop.getDesktop().browse(htmlFile.toURI());
+                    } else {
+                        System.out.println("HTML file not found.");
+                    }
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+
         JLabel lblMessage = new JLabel("", JLabel.CENTER);
         lblMessage.setFont(new Font("Arial", Font.PLAIN, 14));
 
