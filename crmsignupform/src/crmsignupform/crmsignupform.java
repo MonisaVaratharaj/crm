@@ -11,7 +11,7 @@ public class crmsignupform {
 
     public static void main(String[] args) {
         // Create a new frame
-        JFrame frame = new JFrame("Sign up Form");
+        JFrame frame = new JFrame("Form submit");
         frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
